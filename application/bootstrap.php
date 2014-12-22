@@ -109,7 +109,7 @@ if (isset($_SERVER['KOHANA_ENV']))
  */
 Kohana::init(array(
 	'base_url'   => (DIRECTORY_SEPARATOR == '/' ? dirname($_SERVER['SCRIPT_NAME']): str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME']))),
-	'index_file' => FALSE,
+	'index_file' => 'index.php',
 	'profile'    => Kohana::$environment !== Kohana::PRODUCTION,
 	'caching'    => Kohana::$environment === Kohana::PRODUCTION,
 ));
